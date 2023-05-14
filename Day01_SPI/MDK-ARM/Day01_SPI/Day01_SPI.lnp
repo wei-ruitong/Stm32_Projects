@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"day01_spi\startup_stm32f103xb.o"
+"day01_spi\max7219.o"
+"day01_spi\main.o"
+"day01_spi\gpio.o"
+"day01_spi\spi.o"
+"day01_spi\stm32f1xx_it.o"
+"day01_spi\stm32f1xx_hal_msp.o"
+"day01_spi\stm32f1xx_hal_gpio_ex.o"
+"day01_spi\stm32f1xx_hal_spi.o"
+"day01_spi\stm32f1xx_hal.o"
+"day01_spi\stm32f1xx_hal_rcc.o"
+"day01_spi\stm32f1xx_hal_rcc_ex.o"
+"day01_spi\stm32f1xx_hal_gpio.o"
+"day01_spi\stm32f1xx_hal_dma.o"
+"day01_spi\stm32f1xx_hal_cortex.o"
+"day01_spi\stm32f1xx_hal_pwr.o"
+"day01_spi\stm32f1xx_hal_flash.o"
+"day01_spi\stm32f1xx_hal_flash_ex.o"
+"day01_spi\stm32f1xx_hal_exti.o"
+"day01_spi\stm32f1xx_hal_tim.o"
+"day01_spi\stm32f1xx_hal_tim_ex.o"
+"day01_spi\system_stm32f1xx.o"
+--strict --scatter "Day01_SPI\Day01_SPI.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Day01_SPI.map" -o Day01_SPI\Day01_SPI.axf
